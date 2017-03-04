@@ -1,9 +1,42 @@
-body {
+body, html {
   margin: 0;
   padding: 0;
+  min-width: 900px;
 }
 
 img {
   min-height: 100%;
   width: auto;
 }
+
+.main-header {
+  min-height: 436px;
+  background: #eeeeee;
+}
+
+.main-navigation {
+  width: 720px;
+}
+
+.main-navigation ul {
+  display: inline-block;
+  list-style: none;
+  min-height: 56px;
+  vertical-align: middle;
+}
+
+.main-navigation li {
+  display: inline-block;
+  min-height: 30px;
+  line-height: 30px;
+}
+
+.main-navigation a {
+  text-decoration: none;
+}
+
+.main-logo {
+  height: 56px;
+  width: 140px;
+}
+

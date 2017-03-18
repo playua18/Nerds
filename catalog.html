@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body class="catalog">
+  <header class="main-header">
+    <div class="container clearfix">
+      <nav class="main-navigation">
+        <div class="main-logo">
+          <a href="index.html"><img src="img/logo.png" width="139" height="56" alt="Nerds"></a>
+        </div>
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li class="active" href="#"><span>Магазин</span></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+      <div class="user-block"> <a class="basket" href="basket.html">Корзина</a> </div>
+      <h1>Добро пожаловать в магазин готовых макетов</h1> </div>
+  </header>
+  <main class="container clearfix">
+    <form class="ranging" action="#" method="post">
+      <legend>Стоимость:</legend> <div class="range">
+     <input id="price-min" type="range" min="1" max="10" value="5">
+     От <output id="price-min-output" for="price-min">5</output> До <output for="price-max">10</output>
+     </div>
+      <legend>Сетка:</legend>
+      <ul class="grid">
+        <li>
+          <input id="r1" type="radio" name="grid" value="adaptive" checked>
+          <label for="r1"><span class="radio-indicator"></span>Адаптивная</label>
+        </li>
+        <li>
+          <input id="r2" type="radio" name="grid" value="fixed">
+          <label for="r2"><span class="radio-indicator"></span>Фиксированная</label>
+        </li>
+        <li>
+          <input id="r3" type="radio" name="grid" value="responsive">
+          <label for="r3"><span class="radio-indicator"></span>Резиновая</label>
+        </li>
+      </ul>
+      <legend>Особенности:</legend>
+      <ul class="catalog-features">
+        <li>
+          <input id="ch1" type="checkbox" name="slider">
+          <label for="ch1"><span class="checkbox-indicator"></span>Слайдер</label>
+        </li>
+        <li>
+          <input id="ch2" type="checkbox" name="advantage-block">
+          <label for="ch2"><span class="checkbox-indicator"></span>Блок преймуществ</label>
+        </li>
+        <li>
+          <input id="ch3" type="checkbox" name="news">
+          <label for="ch3"><span class="checkbox-indicator"></span>Новости</label>
+        </li>
+        <li>
+          <input id="ch4" type="checkbox" name="gallery">
+          <label for="ch4"><span class="checkbox-indicator"></span>Галерея</label>
+        </li>
+        <li>
+          <input id="ch5" type="checkbox" name="basket">
+          <label for="ch5"><span class="checkbox-indicator"></span>Корзина</label>
+        </li>
+      </ul>
+      <button class="btn" type="submit">Показать</button>
+    </form>
+    <div class="item-catalog">
+      <div class="sorting"> <span class="title">Сортировать:</span> <a href="">По цене</a> <a href="">По типу</a> <a href="">По функционалу</a> <span class="indicator"></span> </div>
+      <div class="items">
+        <div class="item">
+          <div class="item-slider"></div><div class="item-img"><img src="img/item1.png" width="240" height="240" alt=""></div><div class="item-content"><h2>Aviator</h2><p>Одностраничный макет с авторским дизайном</p><a class="btn" src="">8000 р.</a></div></div>
+        <div class="item">
+          <div class="item-slider"></div><div class="item-img"><img class="item-img" src="img/item2.png" width="240" height="240" alt=""></div><div class="item-content"><h2>Sunset</h2><p>Интернет-магазин с личным кабинетом</p><a class="btn" src="">10000 р.</a></div></div>
+        <div class="item">
+          <div class="item-slider"></div><div class="item-img"><img class="item-img" src="img/item3.png" width="240" height="240" alt=""></div><div class="item-content"><h2>Forte</h2><p>Интернет-магазин с личным кабинетом</p><a class="btn" src="">10000 р.</a></div></div>
+        <div class="item">
+          <div class="item-slider"></div><div class="item-img"><img class="item-img" src="img/item4.png" width="240" height="240" alt=""></div><div class="item-content"><h2>Moder Organic Tai</h2><p>Интернет-магазин с личным кабинетом</p><a class="btn" src="">10000 р.</a></div></div>
+        <div class="item">
+          <div class="item-slider"></div><div class="item-img"><img class="item-img" src="img/item5.png" width="240" height="240" alt=""></div><div class="item-content"><h2>Avenue</h2><p>Интернет-магазин с личным кабинетом</p><a class="btn" src="">10000 р.</a></div></div>
+        <div class="item">
+          <div class="item-slider"></div><div class="item-img"><img class="item-img" src="img/item6.png" width="240" height="240" alt=""></div><div class="item-content"><h2>Dovetail</h2><p>Интернет-магазин с личным кабинетом</p><a class="btn" src="">10000 р.</a></div></div>
+      </div>
+        <div class="pagination">
+          <ul>
+            <li class="active">1</li>
+            <li><a href="">2</a></li>
+            <li><a href="">3</a></li>
+            <li><a class="next" href="">Следующая</a></li>
+          </ul>
+        </div>
+    </div>
+<script>
+$(function() {
+var el;
+$("#price-min").change(function() {
+el = $(this);
+el
+.next("#price-min-output")
+.text(el.val());
+})
+.trigger('change');
+});
+    </script>
+  </main>
+  <footer class="main-footer">
+    <section class="footer-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.780937657299!2d30.537931315904085!3d50.42655297947222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e13cda333%3A0x2c0225e22132109f!2z0J_QtdGH0LXRgNGB0LrQsNGP!5e0!3m2!1sru!2sua!4v1488633841199" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="container">
+        <div class="map-content">
+          <h2>Nerds design studio</h2>
+          <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
+          <p>тел. +7(812)275-75-75</p> <a href="" class="btn">Напиши нам</a> </div>
+        <div><img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="мы на карте"></div>
+      </div>
+    </section>
+    <div class="container clearfix">
+      <section class="footer-social">
+        <a href="#" class="social-btn social-vk"></a>
+        <a href="#" class="social-btn social-fb"></a>
+        <a href="#" class="social-btn social-inst"></a>
+      </section>
+      <section class="social-content">
+        <h1 class="social-title">Давайте дружить, это выгодно!</h1>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </section>
+    </div>
+  </footer>
+ </body>
+
+</html>

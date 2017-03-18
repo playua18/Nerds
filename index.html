@@ -5,16 +5,18 @@
 	<title>Untitled Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
 </head>
 <body>
  <header class="main-header">
   <div class="container clearfix">
    <nav class="main-navigation">
+      <div class="main-logo" ><a href="index.html"><img src="img/logo.png" width="139" height="56" alt="Nerds"></a></div>
     <ul>
-      <li class="main-logo"><a><img src="" width="" height="" alt="Nerds"></a></li>
       <li><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
-      <li><a href="#">Магазин</a></li>
+      <li><a href="catalog.html">Магазин</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
    </nav>
@@ -24,38 +26,37 @@
    <div class="slider">
    <div class="left-content">
     <h1>Долго, дорого, скрупулёзно.</h1>
-    <p>Математический выверенный дизайн</p>
+    <p>Математический выверенный дизайн для вашего сайта или мобильного приложения</p>
     <a class="btn" href="#">Узнать больше</a>
    </div>
-   <div class="right-content"><img src="" width="" height="" alt=""></div>
+   <div class="right-content"><img src="img/slide-1.png" width="334" height="231" alt=""></div>
   </div>
   </div>
  </header>
- <main class="container clearfix">
-   <section class="features">
-     <div class="feature-item">
-       <div><img src="" alt=""></div>
-       <b class="feature-name"></b>
-       <p></p>
-       <a href="" class="btn"></a>
+ <main class="container">
+   <section class="features clearfix">
+     <div class="feature-item web-sites">
+       <div><img src="img/web-sites.png" width="240" height="124" alt=""></div>
+       <h2 class="feature-name">Веб-сайты</h2>
+       <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+       <a href="#" class="btn">Заказать</a>
      </div>
-     <div class="feature-item">
-       <div><img src="" alt=""></div>
-       <b class="feature-name"></b>
-       <p></p>
-       <a href="" class="btn"></a>
+     <div class="feature-item apps">
+       <div><img src="img/apps.png" width="240" height="124" alt=""></div>
+       <h2 class="feature-name">Приложения</h2>
+       <p>Покорите топ-10 приложений в AppleStore и GooglePlay</p>
+       <a href="#" class="btn">Заказать</a>
      </div>
-     <div class="feature-item">
-       <div><img src="" alt=""></div>
-       <b class="feature-name"></b>
-       <p></p>
-       <a href="" class="btn"></a>
+     <div class="feature-item presentations">
+       <div><img src="img/presentations.png" width="240" height="124" alt=""></div>
+       <h2 class="feature-name">Презентации</h2>
+       <p>Вы даже не подозреваете насколько вы изумительны!</p>
+       <a href="#" class="btn">Заказать</a>
      </div>
-     <hr>
    </section>
-   <section class="index-content">
+   <section class="index-content clearfix">
      <div class="index-content-left">
-       <b class="index-content-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+       <p class="index-content-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчёт выше креатива. Работаем не покладая рук, как роботы.</p>
        <h2>Выполняем заказы на разработку:</h2>
        <ul>
@@ -65,8 +66,10 @@
        </ul>
      </div>
      <div class="index-content-right">
-       <div class="index-content-logo"></div>
-       <span>Since 2004</span>
+      <div class="index-content-header">
+       <div class="index-content-logo"><img src="img/logo.png" width="187" height="75" alt=""></div>
+       <span class="since">Since 2004</span>
+       </div>
        <h2>Как мы работаем:</h2>
        <ul>
          <li>С самоотдачей 146%</li>
@@ -75,32 +78,35 @@
        </ul>
      </div>
    </section>
-   <hr>
-   <section class="advertising">
-     <div class="advertising gluhanko"><img src="" alt="Глуханко"></div>
-     <div class="advertising htmlacademy"><img src="" alt="html academy"></div>
-     <div class="advertising borodinski"><img src="" alt=барбершоп &laquo;Бородински&raquo;></div>
+   <section class="partners">
+     <div class="partner gluhanko"><img src="img/partner-gluhanko.png" width="198" height="37" alt="Глуханко"></div>
+     <div class="partner htmlacademy"><img src="img/partner-htmlacademy.png" width="199" height="68" alt="html academy"></div>
+     <div class="partner borodinski"><img src="img/partner-borodinski.png" width="209" height="86" alt=барбершоп &laquo;Бородински&raquo;></div>
    </section>
-   <hr>
  </main>
- <footer>
+ <footer class="main-footer">
    <section class="footer-map">
      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.780937657299!2d30.537931315904085!3d50.42655297947222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e13cda333%3A0x2c0225e22132109f!2z0J_QtdGH0LXRgNGB0LrQsNGP!5e0!3m2!1sru!2sua!4v1488633841199" width="100%" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
-     <div class="map-content-left">
+     <div class="container">
+     <div class="map-content">
        <h2>Nerds design studio</h2>
        <p>191186, Санкт-Петербург, ул. Б.Конюшенная, д. 19/8</p>
        <p>тел. +7(812)275-75-75</p>
        <a href="" class="btn">Напиши нам</a>
      </div>
-     <div><img src="" alt="мы на карте" class="marker"></div>
+     <div><img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="мы на карте"></div>
+     </div>
    </section>
-     <section class="social container clearfix">
-       <a href="#" class="social-btn"></a>
-       <a href="#" class="social-btn"></a>
-       <a href="#" class="social-btn"></a>
+    <div class="container clearfix">
+       <section class="footer-social">
+       <a href="#" class="social-btn social-vk"></a>
+       <a href="#" class="social-btn social-fb"></a>
+       <a href="#" class="social-btn social-inst"></a></section>
+       <section class="social-content">
        <h1 class="social-title">Давайте дружить, это выгодно!</h1>
        <p>Скидка 10% для друзей из социальных сетей.</p>
-     </section>
+       </section>
+     </div>
  </footer>
 </body>
 </html>

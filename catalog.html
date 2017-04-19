@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Untitled Document</title>
+  <title>каталог</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
   <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
@@ -30,12 +31,25 @@
   </header>
   <main class="container clearfix">
     <form class="ranging" action="#" method="post">
-      <legend>Стоимость:</legend> <div class="range">
-     <input id="price-min" type="range" min="1" max="10" value="5">
-     От <output id="price-min-output" for="price-min">5</output> До <output for="price-max">10</output>
+     <fieldset class="rang-filter range">
+      <legend>Стоимость:</legend> 
+      <div class="range-controls">
+        <div class="scale">
+          <div class="check-scale">
+            <div class="toggle min-toggle"></div>
+            <div class="toggle max-toggle"></div>
+          </div>
+        </div>
+      </div>
+      <div class="prices">
+     <label for="price-min">
+       От <input id="price-min" value="0" type="text"></label>
+       <label for="price-max"> До <input id="price-max" value="15000" type="text"></label>
      </div>
+     </fieldset>
+     <fieldset class="rang-filter grid">
       <legend>Сетка:</legend>
-      <ul class="grid">
+      <ul>
         <li>
           <input id="r1" type="radio" name="grid" value="adaptive" checked>
           <label for="r1"><span class="radio-indicator"></span>Адаптивная</label>
@@ -49,8 +63,10 @@
           <label for="r3"><span class="radio-indicator"></span>Резиновая</label>
         </li>
       </ul>
+     </fieldset>
+     <fieldset class="rang-filter catalog-features">
       <legend>Особенности:</legend>
-      <ul class="catalog-features">
+      <ul>
         <li>
           <input id="ch1" type="checkbox" name="slider">
           <label for="ch1"><span class="checkbox-indicator"></span>Слайдер</label>
@@ -72,10 +88,13 @@
           <label for="ch5"><span class="checkbox-indicator"></span>Корзина</label>
         </li>
       </ul>
+     </fieldset>
       <button class="btn" type="submit">Показать</button>
     </form>
     <div class="item-catalog">
-      <div class="sorting"> <span class="title">Сортировать:</span> <a href="">По цене</a> <a href="">По типу</a> <a href="">По функционалу</a> <span class="indicator"></span> </div>
+      <div class="sorting"> <span class="title">Сортировать:</span> <a href="">По цене</a> <a href="">По типу</a> <a href="">По функционалу</a>
+      <div class="indicator"><a class="dir-up active" href="#"></a><a class="dir-down" href="#"></a></div>
+      </div>
       <div class="items">
         <div class="item">
           <div class="item-slider"></div><div class="item-img"><img src="img/item1.png" width="240" height="240" alt=""></div><div class="item-content"><h2>Aviator</h2><p>Одностраничный макет с авторским дизайном</p><a class="btn" src="">8000 р.</a></div></div>
@@ -89,7 +108,6 @@
           <div class="item-slider"></div><div class="item-img"><img class="item-img" src="img/item5.png" width="240" height="240" alt=""></div><div class="item-content"><h2>Avenue</h2><p>Интернет-магазин с личным кабинетом</p><a class="btn" src="">10000 р.</a></div></div>
         <div class="item">
           <div class="item-slider"></div><div class="item-img"><img class="item-img" src="img/item6.png" width="240" height="240" alt=""></div><div class="item-content"><h2>Dovetail</h2><p>Интернет-магазин с личным кабинетом</p><a class="btn" src="">10000 р.</a></div></div>
-      </div>
         <div class="pagination">
           <ul>
             <li class="active">1</li>
@@ -98,6 +116,7 @@
             <li><a class="next" href="">Следующая</a></li>
           </ul>
         </div>
+      </div>
     </div>
 <script>
 $(function() {

@@ -63,6 +63,7 @@ img {
 
 .main-header .active {
   position: relative;
+  cursor: default;
 }
 
 .main-header .active:after {

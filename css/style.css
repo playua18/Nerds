@@ -993,3 +993,21 @@ img {
   font-size: 18px;
   margin-top: 25px;
 }
+
+.nav-ready {
+  position: relative;
+}
+
+.nav-ready::before {
+  position: absolute;
+  right: 10%;
+  bottom: -10px;
+  padding: 0 10px;
+  border-radius: 10px 10px 0 0;
+  background: rgba(110, 0, 220, 0.5);
+  content: 'ready';
+  font-size: 13px;
+  line-height: 13px;
+  color: #fff;
+  text-transform: lowercase;
+}

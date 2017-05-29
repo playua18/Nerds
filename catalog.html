@@ -43,8 +43,8 @@
       </div>
       <div class="prices">
      <label for="price-min">
-       От <input id="price-min" value="0" type="text"></label>
-       <label for="price-max"> До <input id="price-max" value="15000" type="text"></label>
+       От <input id="price-min" value="0" type="text" pattern="^[0-9]+$"></label>
+       <label for="price-max"> До <input id="price-max" value="15000" type="text" pattern="^[0-9]+$"></label>
      </div>
      </fieldset>
      <fieldset class="rang-filter grid">
@@ -118,18 +118,6 @@
         </div>
       </div>
     </div>
-<script>
-$(function() {
-var el;
-$("#price-min").change(function() {
-el = $(this);
-el
-.next("#price-min-output")
-.text(el.val());
-})
-.trigger('change');
-});
-    </script>
   </main>
   <footer class="main-footer">
     <section class="footer-map">

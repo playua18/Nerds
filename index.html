@@ -24,13 +24,40 @@
    <div class="user-block">
       <a class="basket" href="basket.html">Корзина</a>
    </div>
-   <div class="slider">
-   <div class="left-content">
+   <div class="h-slider clearfix">
+   <input type="radio" name="h-slider-input" id="h-slider-input-1" checked>
+   <input type="radio" name="h-slider-input" id="h-slider-input-2">
+   <input type="radio" name="h-slider-input" id="h-slider-input-3">
+   <div class="h-sliderok h-slider-1">
+   <div class="h-slider-left-content">
     <h1>Долго, дорого, скрупулёзно.</h1>
-    <p>Математический выверенный дизайн для вашего сайта или мобильного приложения</p>
+    <p>Математический выверенный дизайн <br> для вашего сайта или мобильного приложения</p>
     <a class="btn" href="#">Узнать больше</a>
    </div>
-   <div class="right-content"><img src="img/slide-1.png" width="334" height="231" alt=""></div>
+   <div class="h-slider-right-content"><img src="img/h-slide-1.png" width="334" height="231" alt="">
+   </div>
+   </div>
+   <div class="h-sliderok h-slider-2">
+   <div class="h-slider-left-content">
+    <h1>Любите ли Вы математику, как любим её мы?</h1>
+    <p>Нашим дизайнерам мы удаляем нейроны, ответственные <br> за креатив, что бы дать им возможность всё просчитать</p>
+    <a class="btn" href="#">Узнать больше</a>
+   </div>
+   <div class="h-slider-right-content"><img src="img/h-slide-2.png" width="230" height="249" alt="">
+   </div>
+   </div>
+   <div class="h-sliderok h-slider-3">
+   <div class="h-slider-left-content">
+    <h1>Только наркотики, только хардкор!</h1>
+    <p>Все решения в нашей компании принимаются <br> только под воздействием качественных галлюциногенов</p>
+    <a class="btn" href="#">Узнать больше</a>
+   </div>
+   <div class="h-slider-right-content"><img src="img/h-slide-3.png" width="333" height="319" alt="">
+   </div>
+   </div>
+   <label class="h-slider-label h-slider-label-1" for="h-slider-input-1"></label>
+   <label class="h-slider-label h-slider-label-2" for="h-slider-input-2"></label>
+   <label class="h-slider-label h-slider-label-3" for="h-slider-input-3"></label>
   </div>
   </div>
  </header>
@@ -93,7 +120,7 @@
        <h2>Nerds design studio</h2>
        <p>15 Gordon St, Bloomsbury, <br> London WC1H 0AH</p>
        <p>тел. +44 20 7946 0485</p>
-       <a href="" class="btn">Напиши нам</a>
+       <a href="#" class="btn">Напиши нам</a>
      </div>
      <div><img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="мы на карте"></div>
      </div>
@@ -109,5 +136,21 @@
        </section>
      </div>
  </footer>
+ <form class="modal-write-us" action="#" method="get">
+   <button class="write-us-close" title="Закрыть"></button>
+   <div class="wu-name-wrap">
+   <label for="wu-input-name" class="wu-label-name">Ваше имя:</label>
+   <input type="text" name="name" id="wu-input-name" class="wu-input wu-input-name" placeholder="Представьтесь пожалуйста">
+   </div>   
+   <div class="wu-email-wrap">
+   <label for="wu-input-email" class="wu-label-email">Ваш e-mail:</label>
+   <input type="text" name="email" id="wu-input-email" class="wu-input wu-input-email" placeholder="Для отправки ответа">
+   </div>
+   <div class="wu-textarea-wrap">
+   <label for="" class="wu-textarea">Текст письма:</label>
+   <textarea name="message" id="wu-textarea" placeholder="В свободной форме"></textarea></div>
+   <button type="submit" class="btn write-us-btn">Отправить</button>
+ </form>
+ <script src="js/main.js"></script>
 </body>
 </html>

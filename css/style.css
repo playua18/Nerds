@@ -17,7 +17,7 @@ html {
   width: 880px;
 }
 
-.clearfix {
+.clearfix::after {
   display: table;
   clear: both;
   content: "";
@@ -211,14 +211,14 @@ img {
   position: relative;
   display: block;
   width: inherit;
-  height: 320px;
+  min-height: 320px;
+  overflow: hidden;
 }
 
 .h-slider .h-slider-left-content {
   float: left;
   width: 470px;
-  margin-top: 30px;
-  
+  margin-top: 30px;  
 }
 
 .h-slider h1 {
